@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ezen.boot.mapper.TestMapper">
+
+	<select id="getSingleDataById" parameterType="int" resultType="Product">
+		select * from products where prod_id = #{id}
+	</select>
+	
+	<select id="getMultiDataInId" resultType="Product">
+		select * from products where prod_id in 
+			<foreach collection="ids" item="id" open="(" close=")" separator=",">
+				#{id}
+			</foreach>
+	</select>
+	
+	<select id="getAllData" resultType="Product">
+		select * from products 
+	</select>
+	
+	<insert id="insertData" parameterType="Product">
+		INSERT INTO Products (prod_name, prod_price) 
+		values (#{prod_name}, #{prod_price})
+	</insert>
+</mapper>
