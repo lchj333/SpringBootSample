@@ -1,10 +1,10 @@
-package com.ezen.boot.mapper;
+package com.sample.boot.mapper;
 
 import java.util.ArrayList;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.ezen.boot.model.Product;
+import com.sample.boot.model.Product;
 
 @Mapper
 public interface TestMapper {

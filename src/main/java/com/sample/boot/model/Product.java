@@ -1,4 +1,4 @@
-package com.ezen.boot.model;
+package com.sample.boot.model;
 
 public class Product {
 	private int prod_id;

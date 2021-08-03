@@ -1,4 +1,4 @@
-package com.ezen.boot.config;
+package com.sample.boot.config;
 
 import javax.sql.DataSource;
 
@@ -20,7 +20,7 @@ public class MybatisConfig {
                 .getResources("classpath:mapper/*.xml");
         sqlSessionFactoryBean.setMapperLocations(resources);
         /* alias 설정 com.package..entity.Board -> resultType"Board" */
-        sqlSessionFactoryBean.setTypeAliasesPackage("com.ezen.boot.model");
+        sqlSessionFactoryBean.setTypeAliasesPackage("com.sample.boot.model");
  
         SqlSessionFactory sqlSessionFactory = sqlSessionFactoryBean.getObject();
  

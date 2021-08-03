@@ -1,4 +1,4 @@
-package com.ezen.boot.controller;
+package com.sample.boot.controller;
 
 import java.util.ArrayList;
 
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ezen.boot.model.Product;
-import com.ezen.boot.service.TestService;
+import com.sample.boot.model.Product;
+import com.sample.boot.service.TestService;
 
 @RestController
 public class TestController {

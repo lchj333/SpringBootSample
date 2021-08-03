@@ -1,4 +1,4 @@
-package com.ezen.boot.service;
+package com.sample.boot.service;
 
 import java.util.ArrayList;
 import java.util.Map;
@@ -10,8 +10,8 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.ezen.boot.mapper.TestMapper;
-import com.ezen.boot.model.Product;
+import com.sample.boot.mapper.TestMapper;
+import com.sample.boot.model.Product;
 
 @Service
 public class TestService {
